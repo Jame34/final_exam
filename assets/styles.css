@@ -1,0 +1,255 @@
+/* Header Section */
+.header-section {
+    background-color: #f8f3eb;
+    padding: 1rem 0;
+}
+
+.logo-text {
+    color: #b48c84;
+}
+
+.nav-link {
+    color: #8e6d64;
+    text-decoration: none;
+}
+
+.hover-btn {
+    color: #8e6d64;
+    border-color: #8e6d64;
+}
+
+.hover-btn:hover {
+    background-color: #8e6d64;
+    color: white;
+}
+
+/* Yoga Space Section */
+.yoga-space-section {
+    padding: 3rem 0;
+}
+
+.section-title {
+    color: #8e6d64;
+}
+
+.text-overlay {
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    position: absolute;
+}
+
+.info-box {
+    background-color: #f8f3eb;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.info-title {
+    color: #8e6d64;
+}
+
+.info-list {
+    color: #8e6d64;
+}
+
+.info-btn {
+    background-color: #8e6d64;
+    border-color: #8e6d64;
+    color: white;
+}
+
+/* Specific CSS for each yoga space image */
+.yoga-img-ab {
+    top: 218px;
+    left: 86px;
+    width: 729px;
+    height: 350px;
+}
+
+.yoga-img-cd {
+    top: 592px;
+    left: 86px;
+    width: 349px;
+    height: 350px;
+}
+
+.yoga-img-shower {
+    top: 592px;
+    left: 465px;
+    width: 350px;
+    height: 350px;
+}
+
+.yoga-img-equipment {
+    top: 966px;
+    left: 85px;
+    width: 350px;
+    height: 350px;
+}
+.yoga-img-lounge {
+    top: 966px;
+    left: 465px;
+    width: 350px;
+    height: 350px;
+}
+
+/* Course Section */
+.course-section {
+    padding: 3rem 0;
+    background-color: #f8f3eb;
+    overflow: hidden;
+}
+
+.course-carousel {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.course-carousel::-webkit-scrollbar {
+    height: 8px;
+}
+
+.course-carousel::-webkit-scrollbar-thumb {
+    background-color: #8e6d64;
+    border-radius: 10px;
+}
+
+.course-carousel::-webkit-scrollbar-track {
+    background-color: #f8f3eb;
+}
+
+.course-item {
+    flex: 0 0 auto;
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course-img-basic,
+.course-img-iyengar,
+.course-img-hatha,
+.course-img-universal,
+.course-img-flow,
+.course-img-restorative,
+.course-img-core,
+.course-img-calm {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.course-title {
+    color: #8e6d64;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+.course-instructor {
+    color: #8e6d64;
+    padding: 0.5rem;
+}
+
+/* Footer Section */
+.footer-section {
+    background-color: #70524a;
+    padding: 3rem 0;
+    color: white;
+}
+
+.subscribe-text {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.subscribe-input {
+    width: 100%;
+    max-width: 300px;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: none;
+    margin-right: 0.5rem;
+}
+
+.subscribe-button {
+    background-color: #a98b87;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.footer-links {
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    text-align: right;
+}
+
+.social-icons a {
+    color: white;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .yoga-space-section .row {
+        flex-direction: column;
+    }
+
+    .info-box {
+        margin-top: 2rem;
+    }
+
+    .footer-links {
+        text-align: center;
+    }
+
+    .social-icons {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .course-carousel {
+        gap: 0.5rem;
+        padding: 1rem 0;
+    }
+
+    .course-item {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .header-section nav {
+        flex-direction: column;
+        text-align: center;
+    }
+}
